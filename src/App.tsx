@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect } from 'react'
+import MFAStore from './stores/mfaStore'
+import Home from './pages/home'
+import Create from './pages/create'
+import './App.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+enum Screen {
+  Home,
+  Create,
 }
 
-export default App;
+const store = new MFAStore()
+
+const App = () => {
+  const [screen, setScreen] = useState<Screen>(Screen.Home)
+
+  useEffect(() => {
+    store.start()
+  }, [])
+
+  const getContent = () => {
+    switch (screen) {
+      case Screen.Home:
+        return <Home store={store} onCreate={() => setScreen(Screen.Create)} />
+
+      case Screen.Create:
+        return <Create store={store} onBack={() => setScreen(Screen.Home)} />
+    }
+  }
+
+  return <div className="app">{getContent()}</div>
+}
+
+export default App

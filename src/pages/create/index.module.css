@@ -1,0 +1,7 @@
+.inputName {
+  all: unset;
+  font-size: 32px;
+  width: 100%;
+  text-align: center;
+  border-bottom: thin solid;
+}

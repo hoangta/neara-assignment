@@ -1,0 +1,38 @@
+.container {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.detail {
+  flex-grow: 1;
+}
+
+.image {
+  padding: 0 15px;
+  width: 32px;
+  height: 32px;
+}
+
+.provider {
+  font-size: 18px;
+}
+
+.code {
+  font-size: 52px;
+  font-weight: 200;
+}
+
+.moveButtonContainer {
+  display: flex;
+  gap: 16px;
+}
+
+.moveButton {
+  all: unset;
+  cursor: pointer;
+}
+
+.moveButton:hover {
+  opacity: 0.5;
+}

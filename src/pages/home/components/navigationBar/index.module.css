@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  padding: 16px;
+}
+
+.container > * {
+  flex-grow: 1;
+}
+
+.title {
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.button {
+  all: unset;
+  color: crimson;
+  cursor: pointer;
+}
