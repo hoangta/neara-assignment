@@ -3,8 +3,6 @@ import { fireEvent, render } from '@testing-library/react'
 import MFAList from '..'
 import { mockMFAs, mockSVGElementAnimate } from "../../../../../utils/testUtils";
 
-jest.useFakeTimers("modern");
-jest.setSystemTime(new Date(2023, 2, 1));
 mockSVGElementAnimate();
 
 describe('Pages/Home/Components/MFAList', () => {

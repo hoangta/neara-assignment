@@ -3,12 +3,6 @@ import { render, fireEvent } from '@testing-library/react';
 import Create from '..'
 import MFAStore from "../../../stores/mfaStore";
 
-jest.mock('../../../stores/mfaStore', () =>
-    jest.fn().mockImplementation(() => ({
-        createMFA: jest.fn()
-    }))
-);
-
 describe('Pages/Create', () => {
     const onBackSpy = jest.fn();
     const mockStore = new MFAStore();

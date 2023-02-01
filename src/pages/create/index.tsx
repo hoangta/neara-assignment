@@ -17,7 +17,7 @@ const Create = ({ store, onBack }: Props) => {
   }
 
   return (
-    <div>
+    <div data-testid="create_page">
       <NavigationBar onBack={onBack} onCreate={create} canCreate={name.length > 0} />
       <input
         data-testid="name_text_input"

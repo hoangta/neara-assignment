@@ -17,7 +17,7 @@ const Home = ({ store, onCreate }: Props) => {
   }
 
   return (
-    <div>
+    <div data-testid="home_page">
       <NavigationBar onEdit={() => setIsEditing(!isEditing)} onCreate={onCreate} />
       <MFAList mfas={store.mfas} isEditing={isEditing} switchMFAs={switchMFAs} />
     </div>
