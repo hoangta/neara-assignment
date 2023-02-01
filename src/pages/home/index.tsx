@@ -10,7 +10,7 @@ type Props = {
 }
 
 const Home = ({ store, onCreate }: Props) => {
-  const [isEditting, setIsEditting] = useState(false)
+  const [isEditing, setIsEditing] = useState(false)
 
   const switchMFAs = (p1: number, p2: number) => {
     store.switchMFAs(p1, p2)
@@ -18,8 +18,8 @@ const Home = ({ store, onCreate }: Props) => {
 
   return (
     <div>
-      <NavigationBar onEdit={() => setIsEditting(!isEditting)} onCreate={onCreate} />
-      <MFAList mfas={store.mfas} isEditting={isEditting} switchMFAs={switchMFAs} />
+      <NavigationBar onEdit={() => setIsEditing(!isEditing)} onCreate={onCreate} />
+      <MFAList mfas={store.mfas} isEditing={isEditing} switchMFAs={switchMFAs} />
     </div>
   )
 }

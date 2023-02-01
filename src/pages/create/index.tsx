@@ -20,6 +20,7 @@ const Create = ({ store, onBack }: Props) => {
     <div>
       <NavigationBar onBack={onBack} onCreate={create} canCreate={name.length > 0} />
       <input
+        data-testid="name_text_input"
         type="text"
         className={styles.inputName}
         autoFocus

@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pages/Create should render correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="container"
+    >
+      <button
+        class="button"
+        data-testid="back_button"
+      >
+        Back
+      </button>
+      <div
+        class="title"
+      >
+        New token
+      </div>
+      <button
+        class="button"
+        data-testid="add_button"
+        disabled=""
+      >
+        Add
+      </button>
+    </div>
+    <input
+      class="inputName"
+      data-testid="name_text_input"
+      maxlength="25"
+      type="text"
+      value=""
+    />
+  </div>
+</DocumentFragment>
+`;
