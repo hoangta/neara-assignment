@@ -3,8 +3,6 @@ import { fireEvent, render } from '@testing-library/react'
 import MFAView from '..'
 import { mockSVGElementAnimate, mockMFAs } from "../../../../../utils/testUtils";
 
-jest.useFakeTimers("modern");
-jest.setSystemTime(new Date(2023, 2, 1));
 mockSVGElementAnimate();
 
 describe("Pages/Home/Components/MFAView", () => {

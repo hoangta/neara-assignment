@@ -1,10 +1,8 @@
 import React from "react";
-import { render } from '@testing-library/react';
+import { render, act } from '@testing-library/react';
 import ExpirationIndicator from '../ExpirationIndicator'
 import { mockSVGElementAnimate } from "../../../../../utils/testUtils";
 
-jest.useFakeTimers("modern");
-jest.setSystemTime(new Date(2023, 2, 1));
 const circleAnimateSpy = mockSVGElementAnimate();
 
 describe('Pages/Home/Components/MFA/ExpirationIndicator', () => {
@@ -21,7 +19,11 @@ describe('Pages/Home/Components/MFA/ExpirationIndicator', () => {
         expect(circleAnimateSpy).toBeCalledWith([{ strokeDashoffset: 0 }, { strokeDashoffset: 2 * 14 * Math.PI }], {
             duration: mockRemainingSeconds * 1000
         });
-        const countDownLabel = getByText(mockRemainingSeconds.toFixed());
-        expect(countDownLabel).toBeInTheDocument();
+        expect(getByText(mockRemainingSeconds.toFixed())).toBeInTheDocument();
+        const secsToPass = 2;
+        act(() => {
+            jest.advanceTimersByTime(secsToPass * 1000);
+        })
+        expect(getByText((mockRemainingSeconds - secsToPass).toFixed())).toBeInTheDocument();
     })
 })

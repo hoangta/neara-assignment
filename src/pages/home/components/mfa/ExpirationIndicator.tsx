@@ -15,7 +15,7 @@ const ExpirationIndicator = ({ exp }: Props) => {
 
   useEffect(() => {
     const remainingSeconds = (exp.getTime() - new Date().getTime()) / 1000
-    circleRef.current?.animate([{ strokeDashoffset: 0 }, { strokeDashoffset: strokeDasharray }], {
+    circleRef.current!.animate([{ strokeDashoffset: 0 }, { strokeDashoffset: strokeDasharray }], {
       duration: remainingSeconds * 1000,
     })
     setRemainingSeconds(remainingSeconds)

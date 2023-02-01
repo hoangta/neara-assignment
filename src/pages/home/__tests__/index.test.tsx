@@ -4,17 +4,6 @@ import Home from '..'
 import MFAStore from "../../../stores/mfaStore";
 import { mockSVGElementAnimate, mockMFAs } from '../../../utils/testUtils';
 
-jest.mock('../../../stores/mfaStore', () =>
-    jest.fn().mockImplementation(() => ({
-        mfas: mockMFAs,
-        createMFA: jest.fn(),
-        switchMFAs: jest.fn()
-    }))
-);
-
-jest.useFakeTimers("modern");
-jest.setSystemTime(new Date(2023, 2, 1));
-
 mockSVGElementAnimate();
 
 describe('Pages/Home', () => {
