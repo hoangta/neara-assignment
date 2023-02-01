@@ -62,7 +62,7 @@ exports[`Pages/Home/Components/MFAList should render correctly 1`] = `
         <div
           class="countdownLabel"
         >
-          2464028
+          86400
         </div>
       </div>
     </div>
@@ -125,7 +125,7 @@ exports[`Pages/Home/Components/MFAList should render correctly 1`] = `
         <div
           class="countdownLabel"
         >
-          2550428
+          172800
         </div>
       </div>
     </div>

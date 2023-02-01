@@ -1,20 +1,5 @@
 import { MFA } from "../types/mfa";
 
-export const mockStore = () => {
-  jest.mock("../stores/mfaStore", () =>
-    jest.fn().mockImplementation(() => ({
-      mfas: mockMFAs,
-      createMFA: jest.fn(),
-      switchMFAs: jest.fn(),
-    }))
-  );
-};
-
-export const mockSystemTime = (date: Date) => {
-  jest.useFakeTimers("modern");
-  jest.setSystemTime(date);
-};
-
 export const mockSVGElementAnimate = () => {
   const circleAnimateSpy = jest.fn();
   SVGElement.prototype.animate = circleAnimateSpy;
