@@ -4,18 +4,19 @@ import MFAView from '../mfa'
 
 type Props = {
   mfas: MFA[]
-  isEditting: boolean
+  isEditing: boolean
   switchMFAs: (p1: number, p2: number) => void
 }
 
-const MFAList = ({ mfas, isEditting, switchMFAs }: Props) => {
+const MFAList = ({ mfas, isEditing, switchMFAs }: Props) => {
   return (
     <div>
       {mfas.map((mfa, idx) => (
         <MFAView
+          index={idx}
           mfa={mfa}
           key={idx}
-          isEditting={isEditting}
+          isEditing={isEditing}
           onMoveUp={() => switchMFAs(idx, idx - 1)}
           onMoveDown={() => switchMFAs(idx, idx + 1)}
         />

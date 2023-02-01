@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pages/Home/Components/NavigationBar should render correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <button
+      class="button"
+      data-testid="edit_button"
+    >
+      Edit
+    </button>
+    <div
+      class="title"
+    >
+      Tokens
+    </div>
+    <button
+      class="button"
+      data-testid="add_button"
+      style="font-size: 25px;"
+    >
+      ＋
+    </button>
+  </div>
+</DocumentFragment>
+`;

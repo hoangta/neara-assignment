@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pages/Create/Components/NavigationBar should render correctly with Add button disabled 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <button
+      class="button"
+      data-testid="back_button"
+    >
+      Back
+    </button>
+    <div
+      class="title"
+    >
+      New token
+    </div>
+    <button
+      class="button"
+      data-testid="add_button"
+      disabled=""
+    >
+      Add
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Pages/Create/Components/NavigationBar should render correctly with Add button enabled 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <button
+      class="button"
+      data-testid="back_button"
+    >
+      Back
+    </button>
+    <div
+      class="title"
+    >
+      New token
+    </div>
+    <button
+      class="button"
+      data-testid="add_button"
+    >
+      Add
+    </button>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pages/Home/Components/MFAList should render correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="container"
+    >
+      <div
+        class="moveButtonContainer"
+      >
+        <button
+          class="moveButton"
+          data-testid="moveup_button_0"
+        >
+          ⬆
+        </button>
+        <button
+          class="moveButton"
+          data-testid="movedown_button_0"
+        >
+          ⬇
+        </button>
+      </div>
+      <img
+        alt="Test Provider"
+        class="image"
+        src="www.testurl.com"
+      />
+      <div
+        class="detail"
+      >
+        <div
+          class="provider"
+        >
+          Test Provider
+        </div>
+        <div
+          class="code"
+        >
+          012 345
+        </div>
+      </div>
+      <div
+        class="indicatorContainer"
+      >
+        <svg
+          class="indicatorItem"
+        >
+          <circle
+            class="circle"
+            cx="20"
+            cy="20"
+            fill="none"
+            r="14"
+            stroke="gray"
+            stroke-dasharray="87.96459430051421"
+            stroke-dashoffset="87.96459430051421"
+            stroke-width="2"
+          />
+        </svg>
+        <div
+          class="countdownLabel"
+        >
+          2464028
+        </div>
+      </div>
+    </div>
+    <div
+      class="container"
+    >
+      <div
+        class="moveButtonContainer"
+      >
+        <button
+          class="moveButton"
+          data-testid="moveup_button_1"
+        >
+          ⬆
+        </button>
+        <button
+          class="moveButton"
+          data-testid="movedown_button_1"
+        >
+          ⬇
+        </button>
+      </div>
+      <img
+        alt="Test Provider 2"
+        class="image"
+        src="www.testurl.com"
+      />
+      <div
+        class="detail"
+      >
+        <div
+          class="provider"
+        >
+          Test Provider 2
+        </div>
+        <div
+          class="code"
+        >
+          543 210
+        </div>
+      </div>
+      <div
+        class="indicatorContainer"
+      >
+        <svg
+          class="indicatorItem"
+        >
+          <circle
+            class="circle"
+            cx="20"
+            cy="20"
+            fill="none"
+            r="14"
+            stroke="gray"
+            stroke-dasharray="87.96459430051421"
+            stroke-dashoffset="87.96459430051421"
+            stroke-width="2"
+          />
+        </svg>
+        <div
+          class="countdownLabel"
+        >
+          2550428
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

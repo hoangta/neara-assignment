@@ -8,11 +8,11 @@ type Props = {
 const NavigationBar = ({ onEdit, onCreate }: Props) => {
   return (
     <div className={styles.container}>
-      <button className={styles.button} onClick={onEdit}>
+      <button data-testid="edit_button" className={styles.button} onClick={onEdit}>
         Edit
       </button>
       <div className={styles.title}>Tokens</div>
-      <button className={styles.button} style={{ fontSize: 25 }} onClick={onCreate}>
+      <button data-testid="add_button" className={styles.button} style={{ fontSize: 25 }} onClick={onCreate}>
         ＋
       </button>
     </div>
