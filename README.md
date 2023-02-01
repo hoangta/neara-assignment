@@ -51,7 +51,6 @@ $ yarn start
 - [yarn](https://yarnpkg.com/) - A fast, reliable, and secure dependency management system
 - [mobX](https://mobx.js.org/) - A simple and scalable state management solution for React applications
 - [@testing-library/react](https://testing-library.com/docs/react-testing-library/intro) - A collection of utilities for testing React components
-- [react-draggable](https://github.com/react-dnd/react-draggable) - A simple and flexible drag and drop library for React
 
 ## Notes
 - To reorder items, click at `Edit` to see move up & move down buttons.
