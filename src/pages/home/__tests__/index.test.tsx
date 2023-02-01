@@ -12,6 +12,9 @@ jest.mock('../../../stores/mfaStore', () =>
     }))
 );
 
+jest.useFakeTimers("modern");
+jest.setSystemTime(new Date(2023, 2, 1));
+
 mockSVGElementAnimate();
 
 describe('Pages/Home', () => {

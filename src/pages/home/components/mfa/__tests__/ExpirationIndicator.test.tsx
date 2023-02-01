@@ -1,9 +1,10 @@
 import React from "react";
 import { render } from '@testing-library/react';
 import ExpirationIndicator from '../ExpirationIndicator'
-import { mockSystemTime, mockSVGElementAnimate } from "../../../../../utils/testUtils";
+import { mockSVGElementAnimate } from "../../../../../utils/testUtils";
 
-mockSystemTime(new Date(2023, 2, 1));
+jest.useFakeTimers("modern");
+jest.setSystemTime(new Date(2023, 2, 1));
 const circleAnimateSpy = mockSVGElementAnimate();
 
 describe('Pages/Home/Components/MFA/ExpirationIndicator', () => {
