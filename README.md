@@ -2,17 +2,17 @@
 
 In the project directory, please run the following to install all dependencies
 
-### `npm install`
+### `yarn install`
 
 After that you can start the app
 
-### `npm start`
+### `yarn start`
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### `npm test`
+### `yarn test`
 
 Launches the test runner in the interactive watch mode.
 
-### `npm run test -- --coverage --watchAll=false`
+### `yarn run test -- --coverage --watchAll=false`
 
 Run all tests and view the test coverage.
