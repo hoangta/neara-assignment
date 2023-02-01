@@ -20,4 +20,4 @@ Run all tests and view the test coverage.
 ## Notes
 
 - To reorder items, click at `Edit` to see move up & move down buttons.
-- I was consider using some 3rd party package such as `react-draggable` to reorder items by dragging items around.
+- I was considering using some 3rd party package such as `react-draggable` to reorder items by dragging items around.
